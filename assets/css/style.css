@@ -1,0 +1,638 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.animation {
+    width: 400px;
+    height: 30px;
+    background-color: #EDBFFF;
+    position: fixed;
+    z-index: 99;
+    border-radius: 30px;
+    right: -100%;
+    top: 8%;
+    padding: 6px 170px;
+}
+
+.main {
+    background-color: #0F0D0D;
+    position: relative;
+    cursor: none;
+}
+
+.cursor {
+    z-index: 99;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EDBFFF;
+    position: absolute;
+    transition: all linear 0.2s;
+    position: fixed;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.page1 {
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-top: 13vw;
+    overflow: hidden;
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+}
+
+.nav img {
+    height: 26px;
+    cursor: pointer;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-part2 h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-part2 h4:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+
+.nav-part3 .circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page1>h1 {
+    font-size: 6vw;
+    color: white;
+    font-weight: 300;
+
+
+    margin-left: 6vw;
+    mix-blend-mode: difference;
+}
+
+.page1>h2 {
+    color: white;
+    font-size: 6vw;
+    font-weight: 300;
+    margin-left: 25vw;
+}
+
+.page1>p {
+    width: 24%;
+    margin-left: 34%;
+    color: white;
+    font-size: 1vw;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
+}
+
+.page1-video {
+    width: 60%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    background: url(../image/cover.png) no-repeat center center/cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.page1-video video {
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.page2 {
+    height: auto;
+    width: 100%;
+    padding: 100px 5vw;
+    position: relative;
+}
+
+.page2 h1 {
+    font-size: 7vw;
+    font-weight: 300;
+}
+
+.page3-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+.page2-left {
+    width: 62%;
+    height: auto;
+}
+
+.page2-right {
+    width: 24%;
+    height: auto;
+}
+
+.page2-left h2 {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.page2-right p {
+    font-size: 24px;
+}
+
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0px;
+    background-color: #EDBFFF;
+    margin-top: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.page3 {
+    height: auto;
+    width: 100%;
+    padding: 100px 5vw;
+    position: relative;
+}
+
+.page3 h2 {
+    color: black;
+    font-size: 6.8vw;
+    font-weight: 300;
+}
+
+.page3-inner {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 150px;
+    gap: 282px;
+}
+
+.page3-video {
+    margin-top: 100px;
+}
+
+.page3-img h5 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+
+.page3-video h5 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+
+.page3-img1 {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.page3-img1 img {
+    scale: 1;
+    transition: all ease 0.4s;
+}
+
+.page3-img1 img:hover {
+    scale: 1.1;
+}
+
+.page3-video {
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.page3-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    border-bottom: 2px solid #EEBEFF;
+    padding-bottom: 200px;
+}
+
+.page3-text h2 {
+    color: black;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.page3-text1 {
+    position: relative;
+    font-size: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scale: 1;
+    transition: all ease 0.4s;
+}
+
+.page3-text1:hover {
+    scale: 0.8;
+}
+
+
+
+.page4 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 200px 100px;
+}
+
+.elm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.elm img {
+    width: 400px;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elm:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+.elm img:nth-child(1) {
+    left: 2%;
+}
+
+.elm img:nth-child(3) {
+    right: 10%;
+}
+
+.text-div {
+    height: auto;
+
+}
+
+.elm h3 {
+    font-size: 7vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+    color: white;
+}
+
+.elm:hover h3 {
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+
+.page5 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 100px 100px;
+    overflow: hidden;
+}
+
+.page5-text span {
+    font-size: 3vw;
+    font-weight: 100;
+    color: #EDBFFF;
+}
+
+.page5-text h2 {
+    font-size: 3vw;
+    font-weight: 100;
+    color: white;
+}
+
+.page5-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.page5-text button {
+    padding: 0.25em 1em;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 100px;
+    transition: all ease 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page5-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid white;
+    cursor: pointer;
+}
+
+.box:nth-last-child(1) {
+    border-bottom: 1px solid white;
+    ;
+}
+
+.box h3 {
+    font-size: 1vw;
+    color: gray;
+    font-weight: 100px;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.bo2 h3 {
+    font-size: 1vw;
+    color: gray;
+    font-weight: 100;
+}
+
+.page6 {
+    width: 100%;
+    height: auto;
+    background-color: #EDBFFF;
+    z-index: 99;
+    position: relative;
+}
+
+.page6-text h2 {
+    font-size: 3vw;
+    font-weight: 100;
+    width: 57%;
+}
+
+
+
+.page6-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+
+.page6-text1 button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.page6-text1 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.page6-mail {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 100px 100px 100px 100px;
+}
+
+.page6-mail-text h5 {
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+}
+
+.page6-mail-text {
+    margin-bottom: 30px;
+}
+
+
+.page622 {
+    position: relative;
+}
+
+.page6-email {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    width: 400px;
+    height: auto;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.page6-button {
+    padding: 0.25em 1em;
+    border: none;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 14px;
+    border-radius: 100px;
+    transition: all ease 4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: -2%;
+    right: 0%;
+    font-size: 15px;
+}
+
+.page6-button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.page6-second h5 {
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+    cursor: pointer;
+}
+
+.page69 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page66 h6 {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.page66 li {
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.page6-last h6 {
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+    cursor: pointer;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.menu {
+    display: none;
+}
+
+.show-and-hide {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #EDBFFF;
+    z-index: 103;
+    top: 100%;
+    display: none;
+}
+
+.show-hide1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cross i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.nav-show h4 {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 30px;
+}
+
+.show-and-hide3 img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.page3-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
