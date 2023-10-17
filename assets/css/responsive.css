@@ -99,7 +99,7 @@ img {
         height: 1200px;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 1220px;
     }
 
@@ -207,7 +207,7 @@ img {
         object-fit: cover;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 1500px;
     }
 }
@@ -218,7 +218,7 @@ img {
         height: 1300px;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 1300px;
     }
 
@@ -357,7 +357,7 @@ img {
         height: 1300px;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 1300px;
     }
 
@@ -599,7 +599,7 @@ img {
         height: 500px;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 500px;
     }
 
@@ -670,7 +670,7 @@ img {
         height: 350px;
     }
 
-    .page1-video video {
+    .page1-video{
         height: 350px;
     }
 
